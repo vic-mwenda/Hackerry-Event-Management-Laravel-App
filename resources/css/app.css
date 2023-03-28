@@ -1,0 +1,11 @@
+body {
+    font-family: "EB Garamond", serif;
+    background-color: #F0F5FF;
+}
+
+.hero{
+    background: url("../img/forest.jpeg");
+    height: 30vh;
+}
+
+
