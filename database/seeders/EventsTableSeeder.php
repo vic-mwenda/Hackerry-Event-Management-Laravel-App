@@ -16,18 +16,16 @@ class EventsTableSeeder extends Seeder
             'email' => Str::random(10).'@gmail.com',
             'password' => Hash::make('password'),
         ]);
+        $faker = \Faker\Factory::create();
         DB::table('events')->truncate();
-        DB::table('events')->insert([
-            'name' => "Laravel and Coffee",
-            'city' => "Dublin",
-            'venue' => "Cup of Joe",
-            'description' => "Let's learn Laravel together!"
-        ]);
-        DB::table('events')->insert([
-            'name' => "IoT and the Raspberry Pi",
-            'city' => "Columbus",
-            'venue' => "Columbus Library",
-            'description' => "Weather monitoring with the Pi"
-        ]);
+        foreach (range(1,50)as $index) {
+            DB::table('events')->insert([
+                'name' => $faker->sentence(2),
+                'city' => $faker->city,
+                'venue' => $faker->company,
+                'description' => $faker->paragraphs(1,true)
+            ]);
+        }
+
     }
 }

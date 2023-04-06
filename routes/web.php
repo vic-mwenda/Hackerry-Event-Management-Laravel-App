@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',[\App\Http\Controllers\welcomecontroller::class, 'index']);
-Route::get('events',[\App\Http\Controllers\EventsController::class,'index'])->name('events.index');
+Route::resource('events',implode([\App\Http\Controllers\EventsController::class]));
 Route::view('about', 'about.index')->name('about.index');
 Route::view('about/book', 'about.book')->name('about.book');
 Route::view('about/faq', 'about.faq')->name('about.faq');
