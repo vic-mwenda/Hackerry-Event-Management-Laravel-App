@@ -7,5 +7,7 @@ body {
     background: url("../img/forest.jpeg");
     height: 30vh;
 }
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
