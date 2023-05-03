@@ -1,27 +1,16 @@
 
 <p align="center">
- <h2>Hackerry Laravel application</>
+ <h2>Hackerry Laravel application</h2>
 </p>
 
 Hakerry is a Laravel application that allows users to post events and book them. This README file provides instructions on how to run the application locally.
 
-# Table of Contents
+## Table of Contents
 
-* [Installation](#installation)
-  * [Requirements](#requirements)
-  * [Installation Steps](#installation-steps)
-  * [Getting Started](#getting-started)
-* [Features](#Features)
-* [Components](#Components)
-  * [Languages](#Languages)
-  * [Development Environment](#Development-Environment)
-  * [Database](#database)
-  * [DBMS](#DBMS)
-  * [API](#api)
-  * [Frameworks and Libraries](#Frameworks-and-Libraries)
-  * [Techniques](#techniques)
-* [Details](#details)
-* [Future Improvements](#future-improvements)
+* [Requirements](#Requirements)
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [License](#License)
 
 #### Requirements
 
